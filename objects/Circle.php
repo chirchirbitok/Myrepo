@@ -19,9 +19,15 @@ class Circle implements Shape{
    */
   public function getArea(){
     //@TODO : Round off the area to the nearest 10
-    return pi() * $this->radius * $this->radius;
+    return Round(pi() * $this->radius * $this->radius);
   }
-  //@TODO : Add getters and setters for class properties
+  //@TODO : Add getter and setters for class properties
+public function setRadius($radius){
+  $this->radius=$radius;
+}
+  public function getRadius(){
+    return $this->radius;
+  }
 
 }
 

@@ -23,5 +23,19 @@ class Rectangle implements Shape{
   }
 
   //@TODO : Add getters and setters for class properties
+  public function getHeight(){
+    return $this->height;
+  }
+  public function  setHeight($height){
+    $this->height = $height;
+  }
+  public function setWidth($width){
+    $this->width = $width;
+  }
+  public function getWidth(){
+    return $this->width;
+  }
+
+
 }
 ?>

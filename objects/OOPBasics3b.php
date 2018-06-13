@@ -23,6 +23,7 @@ ClAss Remember{
 
   public function storeInMemory($event){
       //stores event in Memory
+      echo " \tTHis event is from 31st may to 2nd june I will not miss count me in";
   }
 
 }

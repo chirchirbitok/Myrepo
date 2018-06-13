@@ -20,20 +20,46 @@
      * constructor - remember this? @Java 101?
      * @return null
      */
+
     function __construct(){
       //Static function :)
+      // $this->browserDetails = $browserDetails;
+      // $this->p_browserDetails = $p_browserDetails;
+      // $this->pd_browserDetails = $pd_browserDetails;
       TellMe::showMeTheMoney();
       //@TODO : how would you call a private method?
-
+      function sayBrowsers(){
+        echo $this->browserDetails;
+        echo $this->p_browserDetails;
+        echo $this->pd_browserDetails;
+      }
       //@TODO: how would you call a public method??
 
     }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> feature-objects
+    public function getBrowserDetails(){
+         return $this->browserDetails;
+    }
+    public function setBrowserDetails(){
+        $this->browserDetails=$browserDetails;
+    }
+    public function getP_browserDetails(){
+      return $this->p_browserDetails;
+    }
+    public function setP_browserDetails(){
+        $this->p_browserDetails=$p_browserDetails;
+    }
+    public function getPd_browserDetails(){
+     return $this->pd_browserDetails;
+    }
+    public function setPd_browserDetails(){
+      $this->pd_browserDetails=$pd_browserDetails;
+    }
+//
+// <<<<<<< HEAD
+// =======
+//
+//
+// >>>>>>> feature-objects
     /**
      * method that returns browser details
      * @return array
@@ -46,4 +72,6 @@
   new TellMe();
   //@TODO : Instead of calling the method in the constructor, create an object and call it
   //@Submit your changes and push them to your repo :)
+  $dude=new Tellme;
+  $dude->sayBrowsers();
 ?>

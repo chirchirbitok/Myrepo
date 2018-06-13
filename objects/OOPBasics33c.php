@@ -7,11 +7,14 @@ Abstraction  *
     private $steering;
     //both concrete methods
     //abstract
-    public function __contstruct($wheels){
+    public function __contstruct($wheels,$steering){
       $this->wheels = $wheels;
+      $this->steering = $steering;
     }
     //abstract - no implementation
     abstract function shift();
+    abstract function accelarate();
+    abstract function stop();
     //concrete
     public function hoot(){
       echo 'Piiip..piiiii...p';
